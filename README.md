@@ -1,34 +1,31 @@
-# 🤖 Pixelowy Endless Runner – Unity 2D
+# RoboRunner - Infinite Runner 2D 🤖
 
-Prosta gra typu **Infinite Runner** stworzona w **Unity 2D** z pixel-artową oprawą graficzną.  
-Gracz steruje małym robocikiem, który automatycznie biegnie do przodu, a jego zadaniem jest unikanie przeszkód i zbieranie bonusów.
+Dynamiczna gra zręcznościowa typu "Endless Runner" stworzona w silniku Unity. Gracz steruje robotem, którego celem jest przetrwanie jak najdłużej w nieskończonym, proceduralnie generowanym świecie pełnym przeszkód.
 
----
+## 🛠 Technologie
+* **Silnik:** Unity (2D)
+* **Język:** C#
+* **Grafika:** Pixel Art
 
-## 🎮 Rozgrywka
+## 🌟 Główne funkcjonalności
+* **Proceduralne generowanie poziomu:** Przeszkody pojawiają się w losowych odstępach i konfiguracjach, zapewniając unikalność każdej rozgrywki.
+* **System Power-Upów:**
+  * 🔩 **Śrubka:** Bonus punktowy (waluta w grze).
+  * 🔋 **Bateria:** Czasowa nieśmiertelność (Invincibility Mode), pozwalająca na ignorowanie kolizji z przeszkodami.
+* **Fizyka i sterowanie:** Responsywny system skoku oparty na `Rigidbody2D`.
+* **UI/UX:** Licznik punktów w czasie rzeczywistym oraz ekran "Game Over" z możliwością natychmiastowego restartu.
 
-- Robocik biegnie w nieskończoność, a przed nim losowo generują się przeszkody.  
-- Naciśnięcie **spacji** powoduje skok, dzięki czemu można przeskakiwać obiekty na drodze.
-- Zbierane są dwa typy „perkó”w:
-  - 🔩 **Śrubka** – zwiększa liczbę punktów.
-  - 🔋 **Bateria** – zapewnia chwilową **nieśmiertelność**, pozwalając ignorować przeszkody.
-- Po śmierci wyświetlany jest ekran końcowy z informacją o zdobytych punktach oraz opcją ponownego rozpoczęcia gry.
+## 💡 Wyzwania i rozwiązania
+Kluczowym elementem była optymalizacja i płynność generowania świata.
+* **Spawning System:** Napisałem skrypt menedżera (Spawner), który instancjonuje przeszkody poza prawą krawędzią kamery i niszczy je po wyjściu poza lewą krawędź ekranu, aby nie obciążać pamięci.
+* **Logika Nieśmiertelności:** Power-up "Bateria" uruchamia `Coroutine`, która czasowo wyłącza detekcję kolizji z warstwą "Przeszkody" i zmienia wizualny stan gracza, a po upływie czasu przywraca domyślne ustawienia.
 
----
+## 🎮 Sterowanie
+* **Spacja:** Skok (Jump)
 
-## ✨ Funkcje gry
+## 💻 Uruchomienie projektu (Unity)
 
-- Losowe generowanie przeszkód.
-- System punktacji oparty na collectible'ach.
-- Power-up nieśmiertelności.
-- Prosty system śmierci i restartu.
-- Pixel-artowa grafika i minimalistyczny styl.
-- Intuicyjne sterowanie (jedno klawiszem).
-
----
-
-## 🛠️ Technologie
-
-- **Unity 2D**
-- **C# (skrypty)**
-- Pixel-art (stworzone lub zaimportowane jako sprite’y)
+1. Sklonuj repozytorium.
+2. Otwórz projekt w **Unity Hub** (zalecana wersja 202x.x).
+3. Otwórz scenę `GameScene`.
+4. Naciśnij przycisk **Play**.
