@@ -25,7 +25,7 @@ Kluczowym elementem była optymalizacja i płynność generowania świata.
 
 ## 💻 Uruchomienie projektu (Unity)
 
-1. Sklonuj repozytorium.
-2. Otwórz projekt w **Unity Hub** (zalecana wersja 202x.x).
-3. Otwórz scenę `GameScene`.
-4. Naciśnij przycisk **Play**.
+1. Pobierz "Infinity Runner.zip"
+2. Rozpakuj folder
+3. Uruchom InfinityRunner.exe
+4. Wszelkie skrypty projektu znajdują się w folderze "Skrypty"
