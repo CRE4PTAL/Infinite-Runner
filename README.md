@@ -21,11 +21,11 @@ Kluczowym elementem była optymalizacja i płynność generowania świata.
 * **Logika Nieśmiertelności:** Power-up "Bateria" uruchamia `Coroutine`, która czasowo wyłącza detekcję kolizji z warstwą "Przeszkody" i zmienia wizualny stan gracza, a po upływie czasu przywraca domyślne ustawienia.
 
 ## 🎮 Sterowanie
-* **Spacja:** Skok (Jump)
+* **Lewy przycisk myszy:** Skok (Jump)
 
 ## 💻 Uruchomienie projektu (Unity)
 
-1. Pobierz "Infinity Runner.zip"
-2. Rozpakuj folder
-3. Uruchom InfinityRunner.exe
-4. Wszelkie skrypty projektu znajdują się w folderze "Skrypty"
+1. Wejdź w zakładkę Releases (po prawej stronie ekranu)
+2. Kliknij "InfiniteRunner"
+3. Pobierz ZIP'a i go rozpakuj
+4. Uruchom InfinityRunner.exe
